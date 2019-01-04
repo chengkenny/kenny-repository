@@ -62,7 +62,9 @@ public class Sort {
 	public void setSdesc(String sdesc) {
 		this.sdesc = sdesc;
 	}
-
+	/**
+	 * Default Constructor
+	 */ 
 	public Sort() {
 	}
 

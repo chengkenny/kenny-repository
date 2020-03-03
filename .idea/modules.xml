@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-consumer-feign/spring-cloud-consumer-feign.iml" filepath="$PROJECT_DIR$/spring-cloud-consumer-feign/spring-cloud-consumer-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-consumer-ribbon/spring-cloud-consumer-ribbon.iml" filepath="$PROJECT_DIR$/spring-cloud-consumer-ribbon/spring-cloud-consumer-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-demo.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka/spring-cloud-eureka.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka/spring-cloud-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka-cluster/spring-cloud-eureka-cluster.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka-cluster/spring-cloud-eureka-cluster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-provider-hystrix/spring-cloud-provider-hystrix.iml" filepath="$PROJECT_DIR$/spring-cloud-provider-hystrix/spring-cloud-provider-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-provider-simple/spring-cloud-provider-simple.iml" filepath="$PROJECT_DIR$/spring-cloud-provider-simple/spring-cloud-provider-simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-zuul-simple/spring-cloud-zuul-simple.iml" filepath="$PROJECT_DIR$/spring-cloud-zuul-simple/spring-cloud-zuul-simple.iml" />
     </modules>
   </component>
 </project>

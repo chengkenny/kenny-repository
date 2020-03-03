@@ -8,6 +8,11 @@
       <list>
         <option value="$PROJECT_DIR$/spring-cloud-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-eureka-cluster/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-provider-simple/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-consumer-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-provider-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-simple/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-consumer-feign/pom.xml" />
       </list>
     </option>
   </component>

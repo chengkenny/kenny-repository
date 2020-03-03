@@ -1,0 +1,14 @@
+server:
+  port: 1200
+
+spring:
+  application:
+    name: provider-simple
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

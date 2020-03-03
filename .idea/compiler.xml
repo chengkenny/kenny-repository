@@ -12,10 +12,12 @@
         <module name="spring-cloud-eureka" />
         <module name="spring-cloud-provider-hystrix" />
         <module name="spring-cloud-zuul-simple" />
+        <module name="spring-cloud-config-server" />
         <module name="spring-cloud-consumer-ribbon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-cloud-config-server" target="1.8" />
       <module name="spring-cloud-consumer-feign" target="1.8" />
       <module name="spring-cloud-consumer-ribbon" target="1.8" />
       <module name="spring-cloud-eureka" target="1.8" />
@@ -28,6 +30,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-cloud-config-server" options="-parameters" />
       <module name="spring-cloud-consumer-feign" options="-parameters" />
       <module name="spring-cloud-consumer-ribbon" options="-parameters" />
       <module name="spring-cloud-eureka" options="-parameters" />

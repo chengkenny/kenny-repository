@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: zipkin-server
+server:
+  port: 8870
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${server.port}
+    registerWithEureka: true
+  client:
+    serviceUrl:
+      #      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://111.229.16.133:8761/eureka/

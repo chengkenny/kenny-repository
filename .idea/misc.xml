@@ -14,6 +14,8 @@
         <option value="$PROJECT_DIR$/spring-cloud-zuul-simple/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-consumer-feign/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zipkin_server/pom.xml" />
       </list>
     </option>
   </component>

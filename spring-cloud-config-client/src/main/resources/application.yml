@@ -1,0 +1,22 @@
+server:
+  port: 2300
+spring:
+  application:
+    name: config-client
+    # git�ֿ������
+  cloud:
+    config:
+      uri: http://localhost:8880/
+      profile: dev
+      name: user-center.yml
+      discovery:
+        service-id: config-server
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      #      defaultZone: http://localhost:8761/eureka/                       # ����ע������eurka��ַ
+      defaultZone: http://111.229.16.133:8761/eureka/                  # ��Ѷ��ע������eurka��ַ
+

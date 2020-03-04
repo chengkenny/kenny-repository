@@ -1,22 +1,23 @@
 server:
-  port: 8001
+  port: 8880
 spring:
   application:
-    name: spring-cloud-config-server
+    name: config-server
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/chengkenny/cloud-example-config.git  # ÅäÖÃgit²Ö¿âµÄµØÖ·
-          search-paths: dev                                            # git²Ö¿âµØÖ·ÏÂµÄÏà¶ÔµØÖ·£¬¿ÉÒÔÅäÖÃ¶à¸ö£¬ÓÃ,·Ö¸î¡£
-          username: cheng_kenny@163.com                                # git²Ö¿âµÄÕËºÅ
-          password: mxy322512                                          # git²Ö¿âµÄÃÜÂë
+          uri: https://github.com/chengkenny/cloud-example-config.git  # ï¿½ï¿½ï¿½ï¿½gitï¿½Ö¿ï¿½Äµï¿½Ö·
+          #          uri: https://gitee.com/kenny_cheng/config-repos.git
+          search-paths: prd                                            # gitï¿½Ö¿ï¿½ï¿½Ö·ï¿½Âµï¿½ï¿½ï¿½Ôµï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½Ö¸î¡£
+          username: cheng_kenny@163.com                                # gitï¿½Ö¿ï¿½ï¿½ï¿½Ëºï¿½
+          password: mxy322512                                          # gitï¿½Ö¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 eureka:
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}:${server.port}
   client:
     serviceUrl:
-      #      defaultZone: http://localhost:8761/eureka/                       # ±¾µØ×¢²áÖÐÐÄeurkaµØÖ·
-      defaultZone: http://111.229.16.133:8761/eureka/                  # ÌÚÑ¶ÔÆ×¢²áÖÐÐÄeurkaµØÖ·
+      #      defaultZone: http://localhost:8761/eureka/                       # ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eurkaï¿½ï¿½Ö·
+      defaultZone: http://111.229.16.133:8761/eureka/                  # ï¿½ï¿½Ñ¶ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eurkaï¿½ï¿½Ö·
 

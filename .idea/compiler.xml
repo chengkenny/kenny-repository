@@ -6,17 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-cloud-consumer-feign" />
-        <module name="spring-cloud-provider-simple" />
-        <module name="spring-cloud-eureka-cluster" />
-        <module name="spring-cloud-eureka" />
-        <module name="spring-cloud-provider-hystrix" />
+        <module name="spring-cloud-config-client" />
         <module name="spring-cloud-zuul-simple" />
-        <module name="spring-cloud-config-server" />
+        <module name="spring-cloud-provider-simple" />
+        <module name="spring-cloud-zipkin_server" />
         <module name="spring-cloud-consumer-ribbon" />
+        <module name="spring-cloud-eureka-cluster" />
+        <module name="spring-cloud-provider-hystrix" />
+        <module name="spring-cloud-consumer-feign" />
+        <module name="spring-cloud-config-server" />
+        <module name="spring-cloud-eureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-cloud-config-client" target="1.8" />
       <module name="spring-cloud-config-server" target="1.8" />
       <module name="spring-cloud-consumer-feign" target="1.8" />
       <module name="spring-cloud-consumer-ribbon" target="1.8" />
@@ -24,12 +27,14 @@
       <module name="spring-cloud-eureka-cluster" target="1.8" />
       <module name="spring-cloud-provider-hystrix" target="1.8" />
       <module name="spring-cloud-provider-simple" target="1.8" />
+      <module name="spring-cloud-zipkin_server" target="1.8" />
       <module name="spring-cloud-zuul" target="1.8" />
       <module name="spring-cloud-zuul-simple" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-cloud-config-client" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
       <module name="spring-cloud-consumer-feign" options="-parameters" />
       <module name="spring-cloud-consumer-ribbon" options="-parameters" />
@@ -37,6 +42,7 @@
       <module name="spring-cloud-eureka-cluster" options="-parameters" />
       <module name="spring-cloud-provider-hystrix" options="-parameters" />
       <module name="spring-cloud-provider-simple" options="-parameters" />
+      <module name="spring-cloud-zipkin_server" options="-parameters" />
       <module name="spring-cloud-zuul" options="-parameters" />
       <module name="spring-cloud-zuul-simple" options="-parameters" />
     </option>
